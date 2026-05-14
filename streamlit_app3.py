@@ -107,8 +107,8 @@ for key, default in [
 # ─────────────────────────────────────────────────────────────────────────────
 # 啟動自動載入：若已有预存模型檔案，直接還原訓練完成狀態
 # ─────────────────────────────────────────────────────────────────────────────
-_WEIGHTS_PATH = os.path.join(_DIR, "dqn_random_weights.weights.h5")
-_LOG_PATH     = os.path.join(_DIR, "training_log_stage3.json")
+_WEIGHTS_PATH = os.path.join(_DIR, "models/dqn_random_weights.weights.h5")
+_LOG_PATH     = os.path.join(_DIR, "logs/training_log_stage3.json")
 
 if not st.session_state.trained3:
     if os.path.exists(_WEIGHTS_PATH) and os.path.exists(_LOG_PATH):
